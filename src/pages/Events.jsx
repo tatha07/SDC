@@ -29,10 +29,6 @@ function Events() {
             <span className="idx">//</span> events
           </p>
           <h2>Photos from the sessions.</h2>
-          <p className="section-lead">
-            A free-flowing gallery of our workshops and events. Drop photos into <code>src/assets/events/</code> and
-            wire them into <code>src/data/content.js</code> — they flow straight into the strips below.
-          </p>
         </div>
       </div>
 
