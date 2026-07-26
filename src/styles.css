@@ -974,6 +974,168 @@ a {
   max-width: 44ch;
 }
 
+/* ---------- /join — application form ---------- */
+.join-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.join-intro h2 {
+  margin: 16px 0 0;
+}
+
+.join-intro .section-lead {
+  max-width: 46ch;
+}
+
+.join-notes {
+  margin: 28px 0 0;
+  padding: 22px 0 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.join-notes li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 11px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.join-notes li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--violet);
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+}
+
+.join-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.join-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.join-field label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+.join-field input,
+.join-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--line-2);
+  background: var(--bg-elev);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: border-color 0.16s ease, background 0.16s ease;
+}
+
+.join-field textarea {
+  resize: vertical;
+  min-height: 132px;
+}
+
+.join-field input::placeholder,
+.join-field textarea::placeholder {
+  color: var(--muted-2);
+}
+
+.join-field input:hover,
+.join-field textarea:hover {
+  border-color: var(--violet);
+}
+
+.join-field input:focus,
+.join-field textarea:focus {
+  outline: none;
+  border-color: var(--violet-2);
+  background: var(--card-hover);
+}
+
+.join-field input[aria-invalid='true'],
+.join-field textarea[aria-invalid='true'] {
+  border-color: rgba(244, 114, 182, 0.55);
+}
+
+.join-err {
+  font-size: 0.84rem;
+  color: var(--pink);
+}
+
+.join-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.join-count {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--muted-2);
+  white-space: nowrap;
+}
+
+.join-alert {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(244, 114, 182, 0.35);
+  background: rgba(236, 72, 153, 0.08);
+  color: var(--violet-3);
+  font-size: 0.92rem;
+}
+
+.join-submit {
+  align-self: flex-start;
+  border: none;
+}
+
+.join-submit:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.join-done {
+  max-width: 58ch;
+}
+
+.join-done h2 {
+  margin: 18px 0 0;
+}
+
 /* ---------- footer ---------- */
 .footer {
   border-top: 1px solid var(--line);
@@ -1096,6 +1258,11 @@ a {
     gap: 40px;
   }
 
+  .join-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
   .footer-inner {
     grid-template-columns: 1fr 1fr;
   }
@@ -1144,6 +1311,19 @@ a {
 
   .meta-strip {
     gap: 28px;
+  }
+
+  .join-row {
+    grid-template-columns: 1fr;
+  }
+
+  .join-form {
+    padding: 24px 20px;
+  }
+
+  .join-submit {
+    align-self: stretch;
+    justify-content: center;
   }
 
   .cta {

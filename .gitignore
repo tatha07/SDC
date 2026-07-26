@@ -1,2 +1,5 @@
 /node_modules
 /SDC_Photos
+.env
+.env.local
+.vercel

@@ -121,10 +121,10 @@ function Home() {
           <div className="cta">
             <div>
               <h2>Want in?</h2>
-              <p>New members join every semester. Come to a workshop, build something, and see if it’s for you.</p>
+              <p>New members join every semester. Send us a repo you’re proud of and tell us what you built.</p>
             </div>
-            <Link to="/departments" className="btn btn-solid">
-              Meet the team <span className="arrow">→</span>
+            <Link to="/join" className="btn btn-solid">
+              Join SDC <span className="arrow">→</span>
             </Link>
           </div>
         </div>

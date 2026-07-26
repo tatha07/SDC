@@ -37,15 +37,13 @@ function Navbar() {
               {item.label}
             </NavLink>
           ))}
-          <a
-            className="nav-cta"
-            href="https://www.linkedin.com/company/sdcvitb/"
-            target="_blank"
-            rel="noreferrer"
+          <NavLink
+            className={({ isActive }) => (isActive ? 'nav-cta active' : 'nav-cta')}
+            to="/join"
             onClick={() => setOpen(false)}
           >
             Join SDC
-          </a>
+          </NavLink>
         </nav>
       </div>
     </header>

@@ -1,4 +1,8 @@
 // Placeholder roster — swap names, handles, and photos for the real club members.
+import gitWorkshop from '../assets/IMG_1611.jpg'
+import dsa1 from '../assets/DSA_SPRINT.png'
+import dsa2 from '../assets/DSA_SPRINT2.png'
+import community from '../assets/COMMUNITY.png'
 export const clubLead = {
   name: 'Kalpesh Parashar',
   title: 'President, SDC VIT',
@@ -63,12 +67,12 @@ export const departments = [
 // Drop workshop photos in src/assets/events/ and set `image` below (import them and reference here).
 // Slides without an image fall back to a branded gradient card so the strip never looks broken.
 export const eventPhotos = [
-  { title: 'Git Collaboration Workshop', image: null, accent: '#7c3aed' },
-  { title: 'DSA Sprint — Session 1', image: null, accent: '#8b5cf6' },
-  { title: 'DSA Sprint — Session 2', image: null, accent: '#a855f7' },
+  { title: 'Git Collaboration Workshop', image: gitWorkshop, accent: '#7c3aed' },
+  { title: 'DSA Sprint — Session 1', image: dsa1, accent: '#8b5cf6' },
+  { title: 'DSA Sprint — Session 2', image: dsa2, accent: '#a855f7' },
   { title: 'DSA Sprint — Session 3', image: null, accent: '#9333ea' },
   { title: 'LangChain & LangGraph Lab', image: null, accent: '#c084fc' },
-  { title: 'Community Hack Night', image: null, accent: '#7c3aed' },
+  { title: 'Community Hack Night', image: community, accent: '#7c3aed' },
 ];
 
 export const workshops = [
