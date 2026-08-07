@@ -1,16 +1,11 @@
 import { Link } from 'react-router-dom';
 import Marquee from '../components/Marquee.jsx';
 import Terminal from '../components/Terminal.jsx';
-import { stats, features, eventPhotos, clubLead } from '../data/content.js';
+import LeadCard from '../components/LeadCard.jsx';
+import { stats, features, eventPhotos, clubLead, panel } from '../data/content.js';
 
-function initials(name) {
-  return name
-    .split(' ')
-    .map((p) => p[0])
-    .join('')
-    .slice(0, 2)
-    .toUpperCase();
-}
+// The president already has a card in the about section, so only show the rest here.
+const restOfPanel = panel.filter((p) => p && p.name && p !== clubLead);
 
 function Home() {
   return (
@@ -93,25 +88,28 @@ function Home() {
               mentorship. Show up, build something, stick around.
             </p>
           </div>
-          <div className="lead-card">
-            <div className="lead-top">
-              <div className="avatar">
-                {clubLead.photo ? <img src={clubLead.photo} alt={clubLead.name} /> : initials(clubLead.name)}
-              </div>
-              <div>
-                <div className="lead-name">{clubLead.name}</div>
-                <div className="lead-title">{clubLead.title}</div>
-              </div>
-            </div>
-            <p>{clubLead.description}</p>
-            <div className="link-row">
-              <a href={clubLead.github} target="_blank" rel="noreferrer">
-                GitHub ↗
-              </a>
-              <a href={clubLead.linkedin} target="_blank" rel="noreferrer">
-                LinkedIn ↗
-              </a>
-            </div>
+          <LeadCard person={clubLead} />
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <p className="eyebrow">
+              <span className="idx">//</span> the panel
+            </p>
+            <h2>Who keeps it running.</h2>
+            <p className="section-lead">
+              Alongside the president, these three run operations, logistics, and the day-to-day of the club.
+            </p>
+          </div>
+          <div className="panel-grid">
+            {restOfPanel.map((p) => (
+              <LeadCard key={p.name} person={p} />
+            ))}
+          </div>
+          <div className="link-row">
+            <Link to="/panel">Meet the full panel ↗</Link>
           </div>
         </div>
       </section>

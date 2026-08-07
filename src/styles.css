@@ -867,6 +867,28 @@ a {
   background: var(--violet);
 }
 
+/* ---------- panel ---------- */
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.panel-grid .lead-card {
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.18s ease;
+}
+
+.panel-grid .lead-card:hover {
+  border-color: var(--line-2);
+}
+
+.panel-grid .lead-card .link-row {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
 /* ---------- departments ---------- */
 .dept-grid {
   display: grid;

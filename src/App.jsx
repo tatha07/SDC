@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx';
 import Events from './pages/Events.jsx';
 import Workshops from './pages/Workshops.jsx';
 import Departments from './pages/Departments.jsx';
+import Panel from './pages/Panel.jsx';
 import Join from './pages/Join.jsx';
 import TerminalPage from './pages/TerminalPage.jsx';
 
@@ -50,6 +51,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/workshops" element={<Workshops />} />
           <Route path="/departments" element={<Departments />} />
+          <Route path="/panel" element={<Panel />} />
           <Route path="/join" element={<Join />} />
         </Routes>
       </main>

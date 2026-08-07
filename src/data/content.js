@@ -5,13 +5,44 @@ import dsa2 from '../assets/DSA_SPRINT2.png'
 import community from '../assets/COMMUNITY.png'
 export const clubLead = {
   name: 'Kalpesh Parashar',
-  title: 'President, SDC VIT',
+  title: 'President, SDC VITB',
   description:
-    'A visionary leader passionate about building developer communities, mentoring students, and growing VITBs technical impact, He built our last website btw :}',
+    'The absolute carry of the club. They keep the whole SDC ship from crashing when the rest of us are lost in the sauce debugging. Basically, the mastermind calling the big shots. He built our last website btw :}',
   github: 'https://github.com/',
   linkedin: 'https://linkedin.com/in/',
   photo: null,
 };
+export const clubVP ={
+  name: 'Ananya Rajesh Pandey',
+  title: 'Vice-President, SDC VITB',
+  description:
+    "The President's right hand. They're the one who makes sure our crazy ideas can actually scale without breaking production. Whenever we need to figure out how to actually execute a massive plan, they're on it.",
+  // github: 'https://github.com/',
+  linkedin: 'https://linkedin.com/in/',
+  photo: null,
+};
+export const clubGS={
+  name: 'Daksh Rathore',
+  title: 'General Secretary, SDC VITB',
+  description:
+    "The one who actually knows what's going on. While the tech team is arguing about logic and frameworks, they're out here dodging the administrative bullets and handling all the paperwork so the club stays alive and running.",
+  // github: 'https://github.com/',
+  linkedin: 'https://linkedin.com/in/',
+  photo: null,
+};
+export const clubOperations={
+  name: 'Sejal',
+  title: 'Operations Lead, SDC VITB',
+  description:
+    "The absolute GOAT behind the scenes. Whenever we host a session or an event, they're the one managing the pure chaos of logistics so everything runs flawlessly on the outside.",
+  // github: 'https://github.com/',
+  linkedin: 'https://linkedin.com/in/',
+  photo: null,
+};
+
+// The core panel, in order of seniority — rendered on /panel and on the home page.
+// Entries stay in sync with the individual exports above, so edit those, not this.
+export const panel = [clubLead, clubVP, clubGS, clubOperations];
 
 // `coleads` takes as many names as you need — add or remove entries freely.
 // Blank names and empty arrays are skipped when rendering, so half-filled
@@ -62,6 +93,14 @@ export const departments = [
     blurb: 'Films and edits everything from workshop recaps to hype reels.',
     lead: '',
     coleads: [],
+    github: 'https://github.com/',
+    linkedin: 'https://linkedin.com/in/',
+  },
+    {
+    name: 'Event Management',
+    blurb: 'Films and edits everything from workshop recaps to hype reels.',
+    lead: 'Siddhi',
+    coleads: ['Paras','Ashish'],
     github: 'https://github.com/',
     linkedin: 'https://linkedin.com/in/',
   },
@@ -126,4 +165,5 @@ export const navItems = [
   { to: '/events', label: 'Events' },
   { to: '/workshops', label: 'Workshops' },
   { to: '/departments', label: 'Departments' },
+  { to: '/panel', label: 'Panel' },
 ];
