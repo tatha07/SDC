@@ -39,7 +39,7 @@ function Navbar() {
           ))}
           <NavLink
             className={({ isActive }) => (isActive ? 'nav-cta active' : 'nav-cta')}
-            to="/join"
+            to="https://www.linkedin.com/company/sdcvitb/posts/"
             onClick={() => setOpen(false)}
           >
             Join SDC
