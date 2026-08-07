@@ -27,13 +27,13 @@ function Footer() {
 
         <div className="footer-col">
           <span className="h">Connect</span>
-          <a href="https://github.com" target="_blank" rel="noreferrer">
+          {/* <a href="https://github.com" target="_blank" rel="noreferrer">
             GitHub
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+          </a> */}
+          <a href="https://www.linkedin.com/company/sdcvitb/posts/" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/sdcvitb/" target="_blank" rel="noreferrer">
             Instagram
           </a>
         </div>
