@@ -9,7 +9,7 @@ export const clubLead = {
   description:
     'The absolute carry of the club. They keep the whole SDC ship from crashing when the rest of us are lost in the sauce debugging. Basically, the mastermind calling the big shots. He built our last website btw :}',
   github: 'https://github.com/',
-  linkedin: 'https://linkedin.com/in/',
+  linkedin: 'https://www.linkedin.com/in/kalpesh-parashar/',
   photo: null,
 };
 export const clubVP ={
@@ -18,7 +18,7 @@ export const clubVP ={
   description:
     "The President's right hand. They're the one who makes sure our crazy ideas can actually scale without breaking production. Whenever we need to figure out how to actually execute a massive plan, they're on it.",
   // github: 'https://github.com/',
-  linkedin: 'https://linkedin.com/in/',
+  linkedin: 'https://www.linkedin.com/in/ananyapandey333/',
   photo: null,
 };
 export const clubGS={
@@ -27,7 +27,7 @@ export const clubGS={
   description:
     "The one who actually knows what's going on. While the tech team is arguing about logic and frameworks, they're out here dodging the administrative bullets and handling all the paperwork so the club stays alive and running.",
   // github: 'https://github.com/',
-  linkedin: 'https://linkedin.com/in/',
+  linkedin: 'https://www.linkedin.com/in/dakshrathore2021341327/',
   photo: null,
 };
 export const clubOperations={
