@@ -13,12 +13,15 @@ export const clubLead = {
   photo: null,
 };
 
+// `coleads` takes as many names as you need — add or remove entries freely.
+// Blank names and empty arrays are skipped when rendering, so half-filled
+// departments are safe to leave here until the roster is confirmed.
 export const departments = [
   {
     name: 'Technical',
     blurb: 'Runs the workshops, builds club projects, and keeps everyone shipping code.',
     lead: 'Saksham Raut',
-    colead: 'Pata nahi kaun hai',
+    coleads: [],
     github: 'https://github.com/',
     linkedin: 'https://linkedin.com/in/',
   },
@@ -26,39 +29,39 @@ export const departments = [
     name: 'PR',
     blurb: 'Handles outreach, sponsorships, and partnerships across campus and beyond.',
     lead: 'Abhyansh Sharma',
-    colead:'Nafisa',
+    coleads: ['Nafisa', 'Shivansh Sharma'],
     github: 'https://github.com/',
     linkedin: 'https://linkedin.com/in/',
   },
   {
     name: 'Social Media',
     blurb: 'Keeps the club’s feeds alive with recaps, reels, and announcements.',
-    lead: 'Pata nahi kaun hai',
-    colead: 'Pata nahi kaun hai',
+    lead: '',
+    coleads: [],
     github: 'https://github.com/',
     linkedin: 'https://linkedin.com/in/',
   },
   {
     name: 'Design',
     blurb: 'Owns the visual identity — posters, slides, and the brand system.',
-    lead: 'Pata nahi kaun hai',
-    colead: 'Pata nahi kaun hai',
+    lead: '',
+    coleads: [],
     github: 'https://github.com/',
     linkedin: 'https://linkedin.com/in/',
   },
   {
     name: 'Content',
     blurb: 'Writes the words — captions, articles, scripts, and event copy.',
-    lead: 'Pata nahi kaun hai',
-    colead: 'Pata nahi kaun hai',
+    lead: '',
+    coleads: [],
     github: 'https://github.com',
     linkedin: 'https://linkedin.com/in/',
   },
   {
     name: 'Videography',
     blurb: 'Films and edits everything from workshop recaps to hype reels.',
-    lead: 'Pata nahi kaun hai',
-    colead: 'Pata nahi kaun hai',
+    lead: '',
+    coleads: [],
     github: 'https://github.com/',
     linkedin: 'https://linkedin.com/in/',
   },
@@ -70,9 +73,7 @@ export const eventPhotos = [
   { title: 'Git Collaboration Workshop', image: gitWorkshop, accent: '#7c3aed' },
   { title: 'DSA Sprint — Session 1', image: dsa1, accent: '#8b5cf6' },
   { title: 'DSA Sprint — Session 2', image: dsa2, accent: '#a855f7' },
-  { title: 'DSA Sprint — Session 3', image: null, accent: '#9333ea' },
-  { title: 'LangChain & LangGraph Lab', image: null, accent: '#c084fc' },
-  { title: 'Community Hack Night', image: community, accent: '#7c3aed' },
+
 ];
 
 export const workshops = [
