@@ -40,7 +40,8 @@ function Footer() {
       </div>
       <div className="footer-bottom">
         <span className="git-status">
-          <span className="git-dot" /> main <span className="git-sep">·</span> 6 departments
+          {/* <span className="git-dot" /> main */}
+           <span className="git-sep">·</span> 6 departments
           <span className="git-sep">·</span> 3 tracks <span className="git-sep">·</span> // PRs welcome
         </span>
         <span>© {year} SDC · VIT</span>
