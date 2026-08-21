@@ -51,9 +51,9 @@ function Departments() {
           <p className="eyebrow">
             <span className="idx">//</span> the team
           </p>
-          <h2>Six departments, one club.</h2>
+          <h2>Five departments, one club.</h2>
           <p className="section-lead">
-            Everything SDC does runs on these teams — each with a lead and co-leads keeping things moving.
+            Everything SDC does runs on these teams  each with a lead and co-leads keeping things moving.
           </p>
         </div>
 
