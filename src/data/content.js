@@ -8,7 +8,7 @@ export const clubLead = {
   title: 'President, SDC VITB',
   description:
     'The absolute carry of the club. They keep the whole SDC ship from crashing when the rest of us are lost in the sauce debugging. Basically, the mastermind calling the big shots. He built our last website btw :}',
-  github: 'https://github.com/',
+  // github: 'https://github.com/',
   linkedin: 'https://www.linkedin.com/in/kalpesh-parashar/',
   photo: null,
 };
