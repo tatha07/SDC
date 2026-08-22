@@ -140,7 +140,7 @@ export const workshops = [
 ];
 
 export const stats = [
-  { value: '06', label: 'Departments' },
+  { value: '05', label: 'Departments' },
   { value: '03', label: 'Workshop tracks' },
   { value: '05', label: 'Sessions run' },
 ];
