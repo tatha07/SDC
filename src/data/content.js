@@ -62,7 +62,7 @@ export const departments = [
     lead: 'Abhyansh Sharma',
     coleads: ['Nafisa', 'Shivansh Sharma'],
     // github: 'https://github.com/',
-    linkedin: 'https://linkedin.com/in/',
+    linkedin: 'https://www.linkedin.com/in/abhyansh-balbhadra-a82454396/',
   },
   {
     name: 'Social Media',
@@ -102,7 +102,7 @@ export const departments = [
     lead: 'Siddhi',
     coleads: ['Paras','Ashish'],
     // github: 'https://github.com/',
-    linkedin: 'https://linkedin.com/in/',
+    linkedin: 'https://www.linkedin.com/in/siddhi-daga/',
   },
 ];
 
