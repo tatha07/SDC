@@ -83,7 +83,7 @@ function TerminalPage({ onEnter }) {
   // Once the about text is on screen, count down and hand off to the main site.
   useEffect(() => {
     if (!launch) return undefined;
-    setCount(6);
+    setCount(12);
     const id = setInterval(() => {
       setCount((c) => {
         if (c <= 1) {

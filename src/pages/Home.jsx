@@ -24,7 +24,15 @@ function Home() {
               and keep a community where getting good at the craft is the whole point.
             </p>
             <div className="hero-actions">
-              <Link to="/events" className="btn btn-solid">
+              <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSesEN3A4rE46lJ4e0x60tVhnwbr5zpdLK5vVYn6iLI__0SOlw/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-solid">
+                <span className="live-indicator"></span>
+                Recruitment is Live
+              </a>
+              <Link to="/events" className="btn btn-line">
                 See our work <span className="arrow">→</span>
               </Link>
               <Link to="/workshops" className="btn btn-line">
