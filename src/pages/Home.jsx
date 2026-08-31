@@ -1,18 +1,34 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Marquee from '../components/Marquee.jsx';
 import Terminal from '../components/Terminal.jsx';
 import LeadCard from '../components/LeadCard.jsx';
-import AnnouncementPopup from '../components/AnnouncementPopup.jsx';
+import AnnouncementPopup, { SEEN_KEY } from '../components/AnnouncementPopup.jsx';
 import AnnouncementBanner from '../components/AnnouncementBanner.jsx';
 import { stats, features, eventPhotos, clubLead, panel, upcomingEvent } from '../data/content.js';
 
 // The president already has a card in the about section, so only show the rest here.
 const restOfPanel = panel.filter((p) => p && p.name && p !== clubLead);
 
+// Figures out, synchronously and before first paint, whether the pop-up has
+// anything left to do this session. If it doesn't (already shown earlier, or
+// the announcement is switched off), the hero-side banner can render right
+// away instead of waiting on the pop-up's onDone callback.
+function popupAlreadyDone() {
+  if (!upcomingEvent?.active) return true;
+  try {
+    return sessionStorage.getItem(SEEN_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
 function Home() {
+  const [popupDone, setPopupDone] = useState(popupAlreadyDone);
+
   return (
     <>
-      <AnnouncementPopup announcement={upcomingEvent} />
+      <AnnouncementPopup announcement={upcomingEvent} onDone={() => setPopupDone(true)} />
 
       <section className="hero">
         <div className="container hero-inner">
@@ -46,9 +62,9 @@ function Home() {
             </ul>
           </div>
 
-                    <div className="hero-side">
+          <div className="hero-side">
             <Terminal />
-            <AnnouncementBanner announcement={upcomingEvent} variant="side" />
+            {popupDone && <AnnouncementBanner announcement={upcomingEvent} variant="side" />}
           </div>
         </div>
       </section>
