@@ -2,7 +2,9 @@ import { Link } from 'react-router-dom';
 import Marquee from '../components/Marquee.jsx';
 import Terminal from '../components/Terminal.jsx';
 import LeadCard from '../components/LeadCard.jsx';
-import { stats, features, eventPhotos, clubLead, panel } from '../data/content.js';
+import AnnouncementPopup from '../components/AnnouncementPopup.jsx';
+import AnnouncementBanner from '../components/AnnouncementBanner.jsx';
+import { stats, features, eventPhotos, clubLead, panel, upcomingEvent } from '../data/content.js';
 
 // The president already has a card in the about section, so only show the rest here.
 const restOfPanel = panel.filter((p) => p && p.name && p !== clubLead);
@@ -10,6 +12,8 @@ const restOfPanel = panel.filter((p) => p && p.name && p !== clubLead);
 function Home() {
   return (
     <>
+      <AnnouncementPopup announcement={upcomingEvent} />
+
       <section className="hero">
         <div className="container hero-inner">
           <div className="hero-copy">
@@ -42,7 +46,10 @@ function Home() {
             </ul>
           </div>
 
-          <Terminal />
+                    <div className="hero-side">
+            <Terminal />
+            <AnnouncementBanner announcement={upcomingEvent} variant="side" />
+          </div>
         </div>
       </section>
 

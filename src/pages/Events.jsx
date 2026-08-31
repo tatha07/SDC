@@ -1,5 +1,6 @@
 import Marquee from '../components/Marquee.jsx';
-import { eventPhotos } from '../data/content.js';
+import AnnouncementBanner from '../components/AnnouncementBanner.jsx';
+import { eventPhotos, upcomingEvent } from '../data/content.js';
 
 const highlights = [
   {
@@ -30,6 +31,7 @@ function Events() {
           </p>
           <h2>Photos from the sessions.</h2>
         </div>
+        <AnnouncementBanner announcement={upcomingEvent} variant="compact" />
       </div>
 
       <div className="container">

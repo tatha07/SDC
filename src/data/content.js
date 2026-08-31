@@ -167,3 +167,16 @@ export const navItems = [
   { to: '/departments', label: 'Departments' },
   { to: '/panel', label: 'Panel' },
 ];
+// Edit this one block to update (or hide) the "something's coming" announcement
+// everywhere it appears — the pop-up, the home page banner, and the events tab.
+// Set `active: false` to turn it off site-wide without deleting the content.
+export const upcomingEvent = {
+  active: true,
+  badge: 'Coming soon',
+  title: 'Something big is coming.',
+  message: 'Stay tuned — details drop soon.',
+  detail:
+    'We’re cooking up our next event. Follow SDC’s socials or check back here so you don’t miss the announcement.',
+  ctaLabel: 'Follow for updates',
+  ctaHref: 'https://www.linkedin.com/company/sdcvitb/posts/',
+};
