@@ -144,7 +144,7 @@ function Home() {
               <h2>Want in?</h2>
               <p>New members join every semester. Send us a repo you’re proud of and tell us what you built.</p>
             </div>
-            <Link to="https://www.linkedin.com/company/sdcvitb/posts/" className="btn btn-solid">
+            <Link to="https://www.instagram.com/sdcvitb/" className="btn btn-solid">
               Join SDC <span className="arrow">→</span>
             </Link>
           </div>
