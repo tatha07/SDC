@@ -178,5 +178,5 @@ export const upcomingEvent = {
   detail:
     'We’re cooking up our next event. Follow SDC’s socials or check back here so you don’t miss the announcement.',
   ctaLabel: 'Follow for updates',
-  ctaHref: 'https://www.linkedin.com/company/sdcvitb/posts/',
+  ctaHref: 'https://www.instagram.com/sdcvitb/',
 };
