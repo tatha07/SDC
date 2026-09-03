@@ -172,11 +172,11 @@ export const navItems = [
 // Set `active: false` to turn it off site-wide without deleting the content.
 export const upcomingEvent = {
   active: true,
-  badge: 'Coming soon',
-  title: 'Something big is coming.',
-  message: 'Stay tuned — details drop soon.',
+  badge: '5th September is awaiting',
+  title: 'Midnight IUI',
+  message: 'Stop the Clock at 11:00 am',
   detail:
-    'We’re cooking up our next event. Follow SDC’s socials or check back here so you don’t miss the announcement.',
-  ctaLabel: 'Follow for updates',
-  ctaHref: 'https://www.instagram.com/sdcvitb/',
+    "Midnight, a privacy-first blockchain network, is running the first session of its India University Initiative in the country — right here at VIT Bhopal",
+  ctaLabel: 'Register now',
+  ctaHref: ' https://luma.com/2fudfznk',
 };

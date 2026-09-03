@@ -42,7 +42,7 @@ function boot() {
   return [
     { type: 'banner', text: BANNER },
     { type: 'sys', text: 'SDC OS  •  v2026.1  •  Software Development Club, VIT' },
-    { type: 'hint', text: "type  sudo sdc  to get started · type  help  for commands" },
+    { type: 'hint', text: "type  help  for commands" },
   ];
 }
 
