@@ -52,7 +52,7 @@ export const departments = [
     name: 'Technical',
     blurb: 'Runs the workshops, builds club projects, and keeps everyone shipping code.',
     lead: 'Saksham Raut',
-    coleads: [],
+    coleads: ['Tathagato Chatterjee'],
     // github: 'https://github.com/',
     linkedin: 'https://www.linkedin.com/in/saksham-raut-11b10b377/',
   },
@@ -172,11 +172,11 @@ export const navItems = [
 // Set `active: false` to turn it off site-wide without deleting the content.
 export const upcomingEvent = {
   active: true,
-  badge: '5th September is awaiting',
-  title: 'Midnight IUI',
-  message: 'Stop the Clock at 11:00 am',
+  badge: 'Dates Droping Soon',
+  title: 'Event Coming Soon',
+  message: 'Something big is cooking, stay tuned devs!!',
   detail:
-    "Midnight, a privacy-first blockchain network, is running the first session of its India University Initiative in the country — right here at VIT Bhopal",
-  ctaLabel: 'Register now',
-  ctaHref: ' https://luma.com/2fudfznk',
+    "We are cooking something delcious, stay tuned",
+  ctaLabel: 'Follow for updates',
+  ctaHref: 'https://www.instagram.com/sdcvitb/',
 };
