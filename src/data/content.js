@@ -112,6 +112,7 @@ export const eventPhotos = [
   { title: 'Git Collaboration Workshop', image: gitWorkshop, accent: '#7c3aed' },
   { title: 'DSA Sprint — Session 1', image: dsa1, accent: '#8b5cf6' },
   { title: 'DSA Sprint — Session 2', image: dsa2, accent: '#a855f7' },
+  { title: 'Community Meetup', image:community, accent: '#a950fd'}
 
 ];
 
