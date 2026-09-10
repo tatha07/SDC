@@ -142,7 +142,7 @@ function Home() {
           <div className="cta">
             <div>
               <h2>Want in?</h2>
-              <p>New members join every semester. Send us a repo you’re proud of and tell us what you built.</p>
+              <p>New members join every year. Send us a repo you’re proud of and tell us what you built.</p>
             </div>
             <Link to="https://www.linkedin.com/company/sdcvitb/posts/" className="btn btn-solid">
               Join SDC <span className="arrow">→</span>

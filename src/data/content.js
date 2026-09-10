@@ -3,6 +3,7 @@ import gitWorkshop from '../assets/IMG_1611.jpg'
 import dsa1 from '../assets/DSA_SPRINT.png'
 import dsa2 from '../assets/DSA_SPRINT2.png'
 import community from '../assets/COMMUNITY.png'
+import midnight from '../assets/Midnight.jpeg'
 export const clubLead = {
   name: 'Kalpesh Parashar',
   title: 'President, SDC VITB',
@@ -112,8 +113,8 @@ export const eventPhotos = [
   { title: 'Git Collaboration Workshop', image: gitWorkshop, accent: '#7c3aed' },
   { title: 'DSA Sprint — Session 1', image: dsa1, accent: '#8b5cf6' },
   { title: 'DSA Sprint — Session 2', image: dsa2, accent: '#a855f7' },
-  { title: 'Community Meetup', image:community, accent: '#a950fd'}
-
+  { title: 'Community Meetup', image:community, accent: '#a950fd'},
+  {title: 'Midnight IUI #001', image: midnight, accent:'#c07ffd'}
 ];
 
 export const workshops = [
