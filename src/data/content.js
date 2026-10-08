@@ -3,6 +3,7 @@ import gitWorkshop from '../assets/IMG_1611.jpg'
 import dsa1 from '../assets/DSA_SPRINT.png'
 import dsa2 from '../assets/DSA_SPRINT2.png'
 import community from '../assets/COMMUNITY.png'
+import midnight from '../assets/'
 export const clubLead = {
   name: 'Kalpesh Parashar',
   title: 'President, SDC VITB',
@@ -112,7 +113,8 @@ export const eventPhotos = [
   { title: 'Git Collaboration Workshop', image: gitWorkshop, accent: '#7c3aed' },
   { title: 'DSA Sprint — Session 1', image: dsa1, accent: '#8b5cf6' },
   { title: 'DSA Sprint — Session 2', image: dsa2, accent: '#a855f7' },
-  { title: 'Community Meetup', image:community, accent: '#a950fd'}
+  { title: 'Community Meetup', image:community, accent: '#a950fd'},
+  {title: 'Midnight IUI "#"001', image: midnight, accent:'#c07ffd'}
 
 ];
 
@@ -168,11 +170,10 @@ export const navItems = [
   { to: '/departments', label: 'Departments' },
   { to: '/panel', label: 'Panel' },
 ];
-// Edit this one block to update (or hide) the "something's coming" announcement
-// everywhere it appears — the pop-up, the home page banner, and the events tab.
-// Set `active: false` to turn it off site-wide without deleting the content.
+// Edit this block to update the announcement. Set `active: false` to hide it
+// site-wide; set `active: true` to show it again without restoring any code.
 export const upcomingEvent = {
-  active: true,
+  active: false,
   badge: 'Dates Droping Soon',
   title: 'Event Coming Soon',
   message: 'Something big is cooking, stay tuned devs!!',

@@ -31,7 +31,7 @@ function Events() {
           </p>
           <h2>Photos from the sessions.</h2>
         </div>
-        <AnnouncementBanner announcement={upcomingEvent} variant="compact" />
+        {/* <AnnouncementBanner announcement={upcomingEvent} variant="compact" /> */}
       </div>
 
       <div className="container">
