@@ -135,9 +135,9 @@ export const workshops = [
 ];
 
 export const stats = [
-  { value: '05', label: 'Departments' },
+  { value: '06', label: 'Departments' },
   { value: '03', label: 'Workshop tracks' },
-  { value: '05', label: 'Sessions run' },
+  { value: '06', label: 'Sessions run' },
 ];
 
 export const features = [
